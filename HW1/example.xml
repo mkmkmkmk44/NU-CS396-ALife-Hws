@@ -1,0 +1,48 @@
+<mujoco>
+    <worldbody>
+        <light diffuse="0.8 0.8 0.8" pos="0 0 10" dir="0 0 -1"/>
+
+        <!-- Ground plane with a neutral color -->
+        <geom type="plane" size="10 10 0.05" rgba="0.95 0.95 0.95 1"/> 
+
+        <!-- Bicycle Frame -->
+        <body name="frame" pos="0 4 0.1" euler="90 90 90">
+            <joint type="free"/>
+            <geom type="box" size="0.03 0.5 0.02" rgba="0.2 0.4 0.8 1"/> 
+
+			<!-- Wheels -->
+            <body name="front_wheel" pos="0 0.6 -0.05">
+                <joint name="front_wheel_joint" type="hinge" axis="0 0 1" pos="0 0 0"/>
+                <geom type="cylinder" size="0.3 0.05" rgba="1 0.5 0 1"/> 
+            </body>
+
+            <body name="rear_wheel" pos="0 -0.6 -0.05">
+                <joint name="rear_wheel_joint" type="hinge" axis="0 0 1" pos="0 0 0"/>
+                <geom type="cylinder" size="0.3 0.05" rgba="1 0.5 0 1"/> 
+            </body>
+
+			<!-- Front Handle -->
+            <body name="handlebar_stem" pos="0.7 0.2 -0.05" euler="0 90 90">
+                <geom type="box" size="0.02 0.3 0.02" rgba="0.6 0.8 0.2 1"/> 
+            </body>
+
+            <body name="handlebars" pos="0.4 0.4 -0.05" euler="0 0 150">
+                <geom type="box" size="0.4 0.02 0.02" rgba="0.6 0.8 0.2 1"/> 
+            </body>
+
+			<!-- Back Seat -->
+            <body name="saddle" pos="0.4 -0.5 -0.05" euler="0 90 90">
+				<body name="connect" pos="-0.05 0 -0.1" euler="0 135 90">
+					<geom type="box" size="0.02 0.1 0.02" rgba="0.6 0.8 0.2 1"/> 
+				</body>
+					<geom type="box" size="0.15 0.05 0.02" rgba="0.4 0.1 0.5 1"/> 
+				</body>
+			</body>
+	</worldbody>
+					
+	<actuator>
+		<!-- Actuators for wheels -->
+		<velocity joint="front_wheel_joint" kv="1"/>
+		<velocity joint="rear_wheel_joint" kv="1"/>
+	</actuator>
+</mujoco>
