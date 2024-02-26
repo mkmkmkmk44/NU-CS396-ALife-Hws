@@ -1,0 +1,7 @@
+# Class to generate a quadruped model using Mujoco
+# The creature includes a torso and four legs with hip and ankle joints
+# The model creates a simple ant with random ranges of motion with a torso and four legs
+# Then generates randomly sized creatures using the structure of the model with random ranges of motion
+# The model randomly adjusts the size of the torso, the lengths of the legs, the thickness of the legs, and the strength of the actuators within a certain range
+# All classes and functions take values as well (to test the function with different values)
+# No values are provided to create random creatures

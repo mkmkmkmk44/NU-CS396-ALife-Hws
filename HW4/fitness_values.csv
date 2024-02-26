@@ -1,0 +1,12 @@
+Mutation Type, Fitness Value
+Parent Creature, 1.1754000693732158
+Mutation 1: Add a limb, 2.359040841065519
+Mutation 2: Delete 2 limbs, 4.01434397919554
+Mutation 3a: Change motor values Randomly, 1.3200731351018116
+Mutation 3b: Change motor values Incrementally, 5.169464135106604
+Mutation 3c: Change motor values Alternatively, 3.378847825991747
+Mutation 4a: Fix joint ranges -- Alternate Fixed Joints, 1.1210560769185012
+Mutation 4b: Fix joint ranges -- Middle Joints are fixed, 2.066493096961527
+Mutation 4c: Fix joint ranges -- First and Last Joints are fixed, 8.742883573036037
+Mutation 5: Change lengths -- All limb Lengths Random, 3.62920210042296
+Mutation 6: Change sizes -- Change Size, 0.8714341413640131
