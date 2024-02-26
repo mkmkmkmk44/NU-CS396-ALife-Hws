@@ -16,7 +16,7 @@ import csv
 # No values are provided to create random creatures
 class QuadrupedMujocoModel:
     def __init__(self, ankle_range=None, hip_range=None):
-        self.root = Element('mujoco', model="simple_ant")
+        self.root = Element('mujoco', model="simple_quadruped")
         self.counter = 1
         
         # Set random ranges of motion for the hip and ankle joints
