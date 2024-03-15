@@ -154,7 +154,7 @@ def main(num_generations, population_size, save_xml = False, show_simulation=Fal
             xml_name = f"model_xml/gen_{generation+1}_best_creature.xml"
         
         # Show the simulation of the creatures, if specified
-        if show_simulation == 1 or len(best_fitness_scores) == 1:
+        if show_simulation == 1:
             best_creature = sorted_population[0]
             best_creature_xml_string = best_creature.generate_xml()
             xml_name = f"model_xml/gen_{generation+1}_best_creature.xml"
@@ -170,7 +170,7 @@ def main(num_generations, population_size, save_xml = False, show_simulation=Fal
                 best_creature_xml_string = best_creature.generate_xml()
                 xml_name = f"model_xml/gen_{generation+1}_best_creature.xml"
                 write_xml(best_creature_xml_string, xml_name)
-                simulate(xml_name)
+                # simulate(xml_name)
                 # if not save_xml:
                 #     os.remove(xml_name)
 
