@@ -6,7 +6,7 @@ import os
 # Function that generates random creatures
 def generate_random_creature():
     # initialize a random number of limbs
-    num_limbs = random.randint(3, 9)
+    num_limbs = random.randint(3, 10)
 
     # create an initial creature with random number of limbs
     model = SlidingCreatureMuJoCoModel(num_limbs)
@@ -101,8 +101,8 @@ def mutate(model):
     elif mutation_choice == "decrease_motor":
         model.change_motor_values("all", 300)
     elif mutation_choice == "add_limb":
-        if model.num_limbs < 8:
-            limb_num = random.randint(1, 9-model.num_limbs)
+        if model.num_limbs < 9:
+            limb_num = random.randint(1, 10-model.num_limbs)
             model.add_limb(limb_num)
     elif mutation_choice == "delete_limb":
         if model.num_limbs > 4:
