@@ -1,7 +1,7 @@
 # NU-CS396-ALife-Project
 
 Object: Moving Creature with Cylindrical Limbs connected sequentially
-Goal for each creature: To move as much distance as we can in the given time, and not fly off
+Goal for each creature: To move as much distance as it can in the given time
 In this project, we create a population of a certain size, and evolve it through generation and see creatures better at achieving the Goal through the generations.
 
 Running Instructions: 
@@ -54,3 +54,6 @@ Then return the child
         Joints in the middle have greater Control
         Alternate Control values
         Joints have incremental control - Lower Joints have more control
+
+### Fitness Calculation
+Fitness is a weighted sum of distance covered, inverse of energy consumed and (negative weight for penalising) stability.
