@@ -6,17 +6,26 @@ Object: Cycle
 Running Instructions: 
 mjpython simulate.py
 
+<img width="204" alt="image" src="https://github.com/mkmkmkmk44/NU-CS396-ALife-Hws/assets/146587583/2b0d1f95-4227-486a-be53-daea8ecfd2b3">
+
+
 ### Homework 2
 Object: Walking Creature
 
 Running Instructions: 
 mjpython creature_simulate.py
 
+<img width="296" alt="image" src="https://github.com/mkmkmkmk44/NU-CS396-ALife-Hws/assets/146587583/612c528c-e530-4a04-a67b-b33e9b2b8cd2">
+
+
 ### Homework 3
 Object: Quadraped
 
 Running Instructions: 
 mjpython create_random_creature.py
+
+<img width="187" alt="image" src="https://github.com/mkmkmkmk44/NU-CS396-ALife-Hws/assets/146587583/52fbcb7c-813d-4fe9-93c5-010c4ac93a85">
+
 
 #### Description:
 1. Class to generate a quadruped model using Mujoco
@@ -28,10 +37,13 @@ mjpython create_random_creature.py
 7. No values are provided to create random creatures
 
 ### Homework 4
-Object: Snake
+Object: Snake-Like figure
 
 Running Instructions: 
 mjpython mutation_code.py
+
+<img width="217" alt="image" src="https://github.com/mkmkmkmk44/NU-CS396-ALife-Hws/assets/146587583/a1359051-5611-45c7-b59c-52e338adf455">
+
 
 #### Description:
 A Sliding Creature with n limbs joined with hinge joints  
