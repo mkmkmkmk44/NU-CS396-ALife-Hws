@@ -14,7 +14,7 @@ main(num_generations=num_generations, population_size=population_size, save_xml=
 
 2. mutation_code -- contains code to generate the creatures and mutate them
 
-3. fitness_plot.py can be used to plot fitness values
+3. fitness_plot.py -- can be used to plot fitness values
 
 ### How are the creature evolving?
 I initialized a population of 100 random creatures
