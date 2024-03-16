@@ -4,6 +4,9 @@ Object: Moving Creature with Cylindrical Limbs connected sequentially
 Goal for each creature: To move as much distance as it can in the given time
 In this project, we create a population of a certain size, and evolve it through generation and see creatures better at achieving the Goal through the generations.
 
+![image](https://github.com/mkmkmkmk44/NU-CS396-ALife-Hws/assets/146587583/f163dfb5-1e09-45a5-b3a9-ce3cc4a779e9)
+
+
 Running Instructions: 
 mjpython evolve.py
 
